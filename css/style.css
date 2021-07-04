@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: inherit; }
@@ -22,6 +24,17 @@ a {
 ul {
   list-style-type: none; }
 
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-0.5rem); }
+
 .main-header {
   grid-column: center-start / center-end;
   display: flex;
@@ -36,7 +49,7 @@ ul {
   .main-header__info {
     display: inline-block; }
     .main-header__info span {
-      padding: .5rem; }
+      padding: 0.5rem; }
 
 .main-navigation {
   grid-column: center-start / center-end;
@@ -61,7 +74,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
   justify-items: center;
   align-items: center;
   padding: 3rem 0; }
@@ -82,7 +95,8 @@ ul {
   .promo-banner__image {
     width: 100%;
     object-fit: cover;
-    display: block; }
+    display: block;
+    border: 1px solid #eeeeee; }
 
 .featured-product__heading {
   grid-column: center-start / center-end;
@@ -101,22 +115,33 @@ ul {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  border: 1px solid #eeeeee;
+  box-shadow: 3px 6px 8px #eeeeee;
+  padding: 1.5rem;
+  transition: all 0.8s ease; }
+
+.featured-product__box:hover {
+  transform: translateY(1rem); }
 
 .featured-product__image {
   width: 100%;
   grid-column: 1 / span 2;
-  grid-row: 1 / 2; }
+  grid-row: 1 / 2;
+  border-bottom: 1px solid #eeeeee; }
 
 .featured-product__details {
   grid-column: 1 / span 2;
   margin: 2rem 0; }
   .featured-product__details-name {
-    font-weight: 300; }
+    font-weight: 300;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem; }
   .featured-product__details-price {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-    padding: 1.5rem 0; }
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    font-size: 2rem; }
 
 .featured-product__btn {
   text-align: center;
@@ -124,9 +149,14 @@ ul {
   justify-self: center;
   align-self: center;
   padding: 1rem 2.5rem;
-  background-color: #333333; }
+  margin-bottom: 2rem;
+  background-color: #333333;
+  box-shadow: 3px 3px 5px #eeeeee; }
   .featured-product__btn a {
     color: #fff; }
+
+.featured-product__btn:hover {
+  background-color: #4d4d4d; }
 
 .footer-link {
   grid-column: center-start / center-end; }
