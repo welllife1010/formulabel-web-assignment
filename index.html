@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FormuLabel</title>
+</head>
+
+<body>
+
+
+    <!-- Format header to include logo image, website title, and email & phone-->
+    <header class="main-header">
+        <img src="img/formulabel_logo.png" class="main-header__logo">
+        <h1 class="main-header__title">FormuLabel</h1>
+        <div class="main-header__info">
+            <span class="main-header__info-phone">
+                Call us on <a href="tel:888-958-5611">(888)958-5611</a>
+            </span>
+            <span class="main-header__info-email">
+                <a href="mailto:example@email.com">example@email.com</a>
+            </span>
+
+        </div>
+
+    </header>
+
+    <nav class="main-navigation">
+        <!-- Make navigation menu links with "home", "contact", "about" -->
+        <ul class="main-navigation__list">
+            <li class="main-navigation__item"><a href="#" class="main-navigation__link">Home</a></li>
+            <li class="main-navigation__item"><a href="#" class="main-navigation__link">About</a></li>
+            <li class="main-navigation__item"><a href="#" class="main-navigation__link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Promo banners must fit equally in a grid format -->
+    <section class="promo-banner">
+        <img class="promo-banner__image promo-banner__item promo-banner__item--1" src="img/Thermal-banner-test.jpg" />
+        <img class="promo-banner__image promo-banner__item promo-banner__item--2" src="img/Thermal-banner.jpg" />
+        <img class="promo-banner__image promo-banner__item promo-banner__item--3" src="img/banner-1.jpeg" />
+        <img class="promo-banner__image promo-banner__item promo-banner__item--4" src="img/Thermal-banner-test.jpg" />
+    </section>
+
+    <!-- <section class="promo-banner">
+        <figure class="promo-banner__item promo-banner__item--1">
+            <img class="promo-banner__image" src="https://dummyimage.com/300x300/5e5e5e/fff" />
+        </figure>
+        <figure class="promo-banner__item promo-banner__item--2">
+            <img class="promo-banner__image" src="https://dummyimage.com/300x600/5e5e5e/fff" />
+        </figure>
+        <figure class="promo-banner__item promo-banner__item--3">
+            <img class="promo-banner__image" src="https://dummyimage.com/600x300/5e5e5e/fff" />
+        </figure>
+        <figure class="promo-banner__item promo-banner__item--4">
+            <img class="promo-banner__image " src="https://dummyimage.com/300x300/5e5e5e/fff" />
+        </figure> -->
+    </section>
+
+    <!-- Featured products must have 2 rows of 3 items each with equal spacing and sizing -->
+    <h1 class="page-heading featured-product__heading">
+        Featured Products
+    </h1>
+
+    <section class="featured-product__container">
+        <div class="featured-product__box">
+            <img class="featured-product__image" src="img/flx4c-printer-only240.240.jpg" />
+            <div class="featured-product__details">
+                <h2 class="featured-product__details-name">
+                    Product Name
+                </h2>
+                <p class="featured-product__details-price">
+                    $35.00
+                </p>
+            </div>
+            <button class="featured-product__btn"><a href="#">ADD TO CART</a></button>
+        </div>
+
+        <div class="featured-product__box">
+            <img class="featured-product__image" src="img/GHS_jumbo_tags_240.240.png" />
+            <div class="featured-product__details">
+                <h2 class="featured-product__details-name">
+                    Product Name
+                </h2>
+                <p class="featured-product__details-price">
+                    $35.00
+                </p>
+            </div>
+            <button class="featured-product__btn"><a href="#">ADD TO CART</a></button>
+        </div>
+
+        <div class="featured-product__box">
+            <img class="featured-product__image" src="img/ghs_label_sign_printer.240.240.png" />
+            <div class="featured-product__details">
+                <h2 class="featured-product__details-name">
+                    Product Name
+                </h2>
+                <p class="featured-product__details-price">
+                    $35.00
+                </p>
+            </div>
+            <button class="featured-product__btn"><a href="#">ADD TO CART</a></button>
+        </div>
+
+        <div class="featured-product__box">
+            <img class="featured-product__image" src="img/printed_arc_flash_signs.240.240.png" />
+            <div class="featured-product__details">
+                <h2 class="featured-product__details-name">
+                    Product Name
+                </h2>
+                <p class="featured-product__details-price">
+                    $35.00
+                </p>
+            </div>
+            <button class="featured-product__btn"><a href="#">ADD TO CART</a></button>
+        </div>
+
+        <div class="featured-product__box">
+            <img class="featured-product__image" src="img/vinyl_tape_printer_rolls.240.240.png" />
+            <div class="featured-product__details">
+                <h2 class="featured-product__details-name">
+                    formuLABEL™ Vinyl Rolls
+                </h2>
+                <p class="featured-product__details-price">
+                    $39.95
+                </p>
+            </div>
+            <button class="featured-product__btn"><a href="#">ADD TO CART</a></button>
+        </div>
+
+        <div class="featured-product__box">
+            <img class="featured-product__image" src="img/flx4c-printer240.240.jpg" />
+            <div class="featured-product__details">
+                <h2 class="featured-product__details-name">
+                    FLX4C Printer Pipe Marking Kit
+                </h2>
+                <p class="featured-product__details-price">
+                    $1,200.00
+                </p>
+            </div>
+            <button class="featured-product__btn"><a href="#">ADD TO CART</a></button>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <div class="footer-link">
+        <!-- Create footer with navigation links and email address and phone number -->
+        <div class="footer-link__container">
+            <div class="footer-link__nav">
+                <h3 class="footer-link__nav--title">Navigation</h3>
+                <ul class="footer-link__nav--list">
+                    <li class="footer-link__nav--item"><a href="#">Home</a></li>
+                    <li class="footer-link__nav--item"><a href="#">About</a></li>
+                    <li class="footer-link__nav--item"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-link__contact">
+                <h3 class="footer-link__nav--title">Contact</h3>
+                <div class="footer-link__contact--email"><a href="mailto:example@email.com">example@email.com</a></div>
+                <div class="footer-link__contact--phone"><a href="tel:888-958-5611">(888)958-5611</a></div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="main-footer__copyright">All prices are in USD. &copy; 2021 formuLABEL™.</div>
+    </footer>
+
+    <!-- EXTRA POINTS (if time permits)  -->
+    <!-- Make page mobile responsive -->
+
+</body>
+
+</html>
