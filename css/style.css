@@ -75,8 +75,6 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 0.5rem;
-  justify-items: center;
-  align-items: center;
   padding: 3rem 0;
   position: relative; }
   .promo-banner:after {
@@ -90,9 +88,7 @@ ul {
     height: 95%;
     z-index: -1; }
   .promo-banner__item {
-    display: flex;
-    align-self: center;
-    justify-self: center; }
+    display: flex; }
   .promo-banner__item--1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2; }
