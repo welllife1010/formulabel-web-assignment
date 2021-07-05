@@ -113,6 +113,19 @@ ul {
   justify-items: center;
   align-items: center;
   padding: 3rem 0;
+  position: relative;
+
+  &:after {
+    content: "";
+    background-color: $grey-light;
+    opacity: 0.5;
+    position: absolute;
+    top: 1rem;
+    left: -4rem;
+    width: 110%;
+    height: 100%;
+    z-index: -1;
+  }
 
   &__item {
     align-self: center;
