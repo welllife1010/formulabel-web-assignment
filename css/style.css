@@ -32,6 +32,9 @@ ul {
   border: none;
   cursor: pointer; }
 
+.btn:active {
+  transform: translateY(0.5rem); }
+
 .btn:hover {
   transform: translateY(-0.5rem); }
 
@@ -66,6 +69,8 @@ ul {
   .main-navigation__item {
     display: inline-block;
     padding: 1.5rem 1.5rem 0rem 1.5rem; }
+  .main-navigation__item:hover > .main-navigation__link {
+    color: #999999; }
   .main-navigation__link {
     color: #333333; }
 
@@ -219,7 +224,12 @@ ul {
   .main-header {
     flex-direction: column; }
     .main-header__info {
-      align-self: flex-end; } }
+      align-self: flex-end; }
+  .main-footer {
+    flex-direction: column; }
+    .main-footer__copyright {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem; } }
 
 @media (max-width: 700px) {
   .featured-product__container {

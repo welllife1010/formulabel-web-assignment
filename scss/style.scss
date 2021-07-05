@@ -49,6 +49,10 @@ ul {
   cursor: pointer;
 }
 
+.btn:active {
+  transform: translateY(0.5rem);
+}
+
 .btn:hover {
   transform: translateY(-0.5rem);
 }
@@ -97,6 +101,10 @@ ul {
   &__item {
     display: inline-block;
     padding: 1.5rem 1.5rem 0rem 1.5rem;
+  }
+
+  &__item:hover > &__link {
+    color: $grey;
   }
 
   &__link {
@@ -317,6 +325,14 @@ ul {
     flex-direction: column;
     &__info {
       align-self: flex-end;
+    }
+  }
+
+  .main-footer {
+    flex-direction: column;
+    &__copyright {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
     }
   }
 }
