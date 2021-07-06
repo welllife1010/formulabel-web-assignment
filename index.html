@@ -23,28 +23,27 @@
             <span class="main-header__info-email">
                 <a href="mailto:example@email.com">example@email.com</a>
             </span>
-
         </div>
-
     </header>
 
     <nav class="main-navigation">
         <!-- Make navigation menu links with "home", "contact", "about" -->
         <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="#" class="main-navigation__link">Home</a></li>
+            <li class="main-navigation__item menu" onclick="menuToggle();">
+                <a href="#" class="main-navigation__link menu-link">Home</a>
+                <ul class="main-navigation__dropdown-list sub-menu">
+                    <li class="main-navigation__dropdown-item"><a class="main-navigation__dropdown-link">FLX4C</a></li>
+                    <li class="main-navigation__dropdown-item"><a class="main-navigation__dropdown-link">FLX4P</a></li>
+                    <li class="main-navigation__dropdown-item"><a class="main-navigation__dropdown-link">Handheld Label Printer</a></li>
+                </ul>
+            </li>
             <li class="main-navigation__item"><a href="#" class="main-navigation__link">About</a></li>
             <li class="main-navigation__item"><a href="#" class="main-navigation__link">Contact</a></li>
         </ul>
+
     </nav>
 
     <!-- Promo banners must fit equally in a grid format -->
-    <!-- <section class="promo-banner">
-        <img class="promo-banner__image promo-banner__item promo-banner__item--1" src="img/Thermal-rec-banner-2.jpg" />
-        <img class="promo-banner__image promo-banner__item promo-banner__item--2" src="img/Thermal-banner.jpg" />
-        <img class="promo-banner__image promo-banner__item promo-banner__item--3" src="img/formuLABEL-big-banner-2.jpg" />
-        <img class="promo-banner__image promo-banner__item promo-banner__item--4" src="img/formulabel-rec-banner-2.jpg" />
-    </section> -->
-
     <section class="promo-banner">
         <figure class="promo-banner__item promo-banner__item--1">
             <img class="promo-banner__image" src="img/Thermal-rec-banner-2.jpg" />
@@ -172,6 +171,32 @@
 
     <!-- EXTRA POINTS (if time permits)  -->
     <!-- Make page mobile responsive -->
+
+
+    <script>
+        const toggleMenu = document.querySelector('.main-navigation__dropdown-list');
+        const menu = document.querySelector('.menu');
+        const menuLink = document.querySelector('.menu-link');
+
+        function menuToggle() {
+            toggleMenu.classList.toggle('active');
+        }
+
+        function menuTurnOff() {
+            toggleMenu.classList.remove('active');
+        }
+
+        document.addEventListener('click', e => {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log(e.target)
+            if(e.target !== menuLink) {
+                menuTurnOff();
+                console.log('turn off sub menu');
+            }
+        });
+
+    </script>
 
 </body>
 
